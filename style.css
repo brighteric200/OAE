@@ -1,0 +1,639 @@
+/* Custom CSS Variables for Brand Colors */
+:root {
+    --primary-black: #121212;
+    --secondary-dark: #1f1f1f;
+    --metallic-silver: #c0c0c0;
+    --crimson-red: #d32f2f;
+    --crimson-hover: #b71c1c;
+    --whatsapp-green: #25d366;
+    --pure-white: #ffffff;
+    --light-bg: #f8f9fa;
+    --text-dark: #222222;
+    --text-muted: #666666;
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Roboto', sans-serif;
+}
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--text-dark);
+    line-height: 1.6;
+    background-color: var(--pure-white);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+.bg-light {
+    background-color: var(--light-bg);
+}
+
+.dark-section {
+    background-color: var(--primary-black);
+    color: var(--pure-white);
+}
+
+/* Headings */
+.section-subtitle {
+    color: var(--crimson-red);
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.section-title {
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.section-desc {
+    color: var(--text-muted);
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 4px;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--crimson-red);
+    color: var(--pure-white);
+}
+
+.btn-primary:hover {
+    background-color: var(--crimson-hover);
+}
+
+.btn-whatsapp {
+    background-color: var(--whatsapp-green);
+    color: var(--pure-white);
+}
+
+.btn-whatsapp:hover {
+    background-color: #1eb954;
+}
+
+.btn-lg {
+    padding: 15px 32px;
+    font-size: 1rem;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+/* Top Bar */
+.top-bar {
+    background-color: var(--primary-black);
+    color: var(--metallic-silver);
+    font-size: 0.85rem;
+    padding: 8px 0;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+.top-bar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.top-info span {
+    margin-right: 20px;
+}
+
+.top-actions a {
+    margin-left: 15px;
+    color: var(--pure-white);
+}
+
+.top-actions .top-wa {
+    color: var(--whatsapp-green);
+}
+
+/* Navigation Header */
+.header {
+    background-color: var(--secondary-dark);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    color: var(--pure-white);
+}
+
+.logo-bold {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.logo-sub {
+    font-size: 0.65rem;
+    color: var(--crimson-red);
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    color: var(--pure-white);
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--crimson-red);
+}
+
+.hamburger {
+    display: none;
+    color: var(--pure-white);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    color: var(--pure-white);
+    padding: 60px 0;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero-tagline {
+    display: inline-block;
+    color: var(--crimson-red);
+    font-family: var(--font-heading);
+    font-weight: 700;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.hero-title {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-subtitle {
+    font-size: 1.1rem;
+    color: var(--metallic-silver);
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* About Us Section */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.about-features {
+    margin-top: 30px;
+}
+
+.feature-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.feature-item i {
+    font-size: 1.8rem;
+    color: var(--crimson-red);
+    margin-top: 5px;
+}
+
+.experience-box {
+    background-color: var(--secondary-dark);
+    color: var(--pure-white);
+    padding: 40px;
+    border-left: 5px solid var(--crimson-red);
+    border-radius: 4px;
+}
+
+.experience-box h3 {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.experience-box hr {
+    border: none;
+    height: 1px;
+    background-color: #333;
+    margin: 20px 0;
+}
+
+.about-list li {
+    margin-bottom: 12px;
+    color: var(--metallic-silver);
+}
+
+.about-list i {
+    color: var(--crimson-red);
+    margin-right: 8px;
+}
+
+/* Services Grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.service-card {
+    background: var(--pure-white);
+    padding: 35px 25px;
+    border-radius: 6px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    border-bottom-color: var(--crimson-red);
+}
+
+.service-icon {
+    font-size: 2.2rem;
+    color: var(--crimson-red);
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+}
+
+.service-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+/* Why Choose Us */
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+}
+
+.why-card {
+    background-color: var(--secondary-dark);
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 6px;
+    border: 1px solid #2a2a2a;
+}
+
+.why-card i {
+    font-size: 2.5rem;
+    color: var(--crimson-red);
+    margin-bottom: 15px;
+}
+
+.why-card h4 {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.why-card p {
+    color: var(--metallic-silver);
+    font-size: 0.9rem;
+}
+
+/* Projects Gallery Placeholder */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery-placeholder {
+    background-color: var(--secondary-dark);
+    color: var(--metallic-silver);
+    height: 200px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border: 2px dashed #444;
+}
+
+.gallery-placeholder i {
+    font-size: 2.5rem;
+    color: var(--crimson-red);
+    margin-bottom: 10px;
+}
+
+/* Booking Form Section */
+.booking-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 40px;
+    background-color: var(--pure-white);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+}
+
+.phone-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--crimson-red);
+}
+
+.booking-form .form-group {
+    margin-bottom: 18px;
+}
+
+.booking-form label {
+    display: block;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+}
+
+.booking-form input, .booking-form select, .booking-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+}
+
+.booking-form input:focus, .booking-form select:focus, .booking-form textarea:focus {
+    outline: none;
+    border-color: var(--crimson-red);
+}
+
+.form-response {
+    margin-top: 15px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Reviews */
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.review-card {
+    background-color: var(--light-bg);
+    padding: 30px;
+    border-radius: 6px;
+    border-left: 4px solid var(--crimson-red);
+}
+
+.stars {
+    color: #f39c12;
+    margin-bottom: 15px;
+}
+
+.review-card p {
+    font-style: italic;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.reviewer-info h4 {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+}
+
+.reviewer-info span {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+/* Contact Section */
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.contact-card {
+    background-color: var(--pure-white);
+    padding: 30px;
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.05);
+}
+
+.contact-icon {
+    font-size: 2rem;
+    color: var(--crimson-red);
+    margin-bottom: 15px;
+}
+
+.contact-card h4 {
+    font-family: var(--font-heading);
+    margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--primary-black);
+    color: var(--metallic-silver);
+    padding: 60px 0 20px 0;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-brand h3 {
+    color: var(--pure-white);
+    font-family: var(--font-heading);
+    margin-bottom: 15px;
+}
+
+.footer-links h4, .footer-contact h4 {
+    color: var(--pure-white);
+    font-family: var(--font-heading);
+    margin-bottom: 15px;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a:hover {
+    color: var(--crimson-red);
+}
+
+.footer-bottom {
+    border-top: 1px solid #222;
+    padding-top: 20px;
+    font-size: 0.85rem;
+}
+
+/* Floating WhatsApp Button */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 25px;
+    right: 25px;
+    background-color: var(--whatsapp-green);
+    color: var(--pure-white);
+    border-radius: 50px;
+    text-align: center;
+    font-size: 32px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .about-grid, .booking-wrapper {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .top-bar {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--secondary-dark);
+        flex-direction: column;
+        padding: 20px;
+        display: none;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+
+    .hero-title {
+        font-size: 2.2rem;
+    }
+}
